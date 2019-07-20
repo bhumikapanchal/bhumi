@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>DIGITAL CLOCK </title>
+<style>
+body {
+back ground-color:powderblue;
+Font-Size:400%;
+Position:absolute;
+Top:300;left:700;
+Color:blue;
+Text-align:center;
+}
+</style>
+<script>
+Function startTime (){
+var today=new Date();
+var h=today.get Hours();
+var m=today.get Minutes();
+var s=today.get Seconds();
+M= Check Time (M);
+S=Check Time(S);
+document.get ElementById('text').innerHTML=h+":"+m+":"+s;
+var t =Set Timeout (Start Time,500);
+}
+Function CheckTime (i){
+if(i<10){i="0"+i};//add zero in front of number < 10
+return i;
+}
+</script>
+</head>
+<body  on load="start time ()">
+<h1>digital clock</h1>
+<div id="txt"></div>
+</body>
+</html>
