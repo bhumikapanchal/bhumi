@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <title>Welcome to Login/Register</title>
+    <link rel='stylesheet' href='/stylesheets/register.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="javascripts/register.js"></script>
+  </head>
+  <body>
+      <div class="sigin">
+          <form method="POST" action="/register">
+              <h2>Log In</h2>
+              <input type="text" name="uname" id="username" />
+              <input type="password" name="password" id="password" />
+              <a href=""><input type="submit" id="submit" value="Log In" /></a><br>
+        <br>
+            <div id="container">
+              <a href="/reset">Reset Password</a>
+              <a href="/forgot">Forgot Password</a>
+              </div><br><br>
+              <span>Don't have Account?<a href="/signup">Sign Up</a></span>
+      </form>
+    </div>
+
+  </body>
+</html>
